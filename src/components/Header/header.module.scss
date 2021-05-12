@@ -1,1 +1,29 @@
-// TODO
+.headerContainer {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: filter 0.2s;
+
+        &:hover{
+            filter: brightness(0.7);
+        }
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+
+        strong {
+            color: var(--pink-500);
+            font-weight: 700;
+            font-size: 2rem;
+            margin-left: 0.25rem;
+        }
+    }
+}

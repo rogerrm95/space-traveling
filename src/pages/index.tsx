@@ -1,5 +1,6 @@
 import { GetStaticProps } from 'next'
 import { ReactElement } from 'react';
+
 import Prismic from '@prismicio/client'
 import { getPrismicClient } from '../services/prismic';
 
@@ -27,8 +28,8 @@ interface HomeProps {
 
 export default function Home(): ReactElement {
   return (
-    <div>
-      <h1>Ola Mundo ....</h1>
+    <div className={commonStyles.container}>
+      <h1>Conteudo</h1>
     </div>
   )
 }
@@ -41,7 +42,7 @@ export const getStaticProps: GetStaticProps = async (req) => {
 
   return {
     props: {
-      data: []
+      postsResponse
     }
   }
 };
