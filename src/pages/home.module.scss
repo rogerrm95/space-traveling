@@ -1,1 +1,58 @@
-// TODO
+.postsList {
+    padding: 0;
+    margin: 1.5rem 0;
+
+    li {
+        list-style: none;
+        margin-top: 3rem;
+        text-align: justify;
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 2.25rem;
+        }
+
+        p {
+            color: var(--gray-200);
+            font-size: 1.125rem; // 18px //
+            line-height: 1.5rem;    
+        }
+
+        span {
+            display: block;
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+
+            :first-child {
+                margin-right: 0.75rem;
+            }
+
+            :last-child {
+                margin-left: 1.5rem;
+                margin-right: 0.75rem;
+            }
+        }
+    }
+}
+
+.readMoreButton {
+    border: none;
+    background: none;
+    color: var(--pink-500);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(0.7);
+    }
+}
