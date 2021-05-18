@@ -1,41 +1,51 @@
-.postsList {
-    padding: 0;
-    margin: 1.5rem 0;
+.postItem {
+    text-align: justify;
+    cursor: pointer;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
 
-    li {
-        list-style: none;
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    p {
+        color: var(--gray-200);
+        font-size: 1.125rem; // 18px //
+        line-height: 1.5rem;
+    }
+
+    footer {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        text-transform: capitalize;
+
+        svg {
+            margin-right: 0.25rem;
+        }
+    }
+
+    &:not(:first-child) {
         margin-top: 3rem;
-        text-align: justify;
+    }
 
-        h3 {
-            font-size: 1.5rem;
-            line-height: 2.25rem;
-        }
+    transition: color 0.2s;
+    transition: background-color 0.3s;
 
+    &:hover {
+        color: var(--pink-500);
+        background-color: rgba(0, 0, 0, 0.253);
+   
         p {
-            color: var(--gray-200);
-            font-size: 1.125rem; // 18px //
-            line-height: 1.5rem;    
-        }
-
-        span {
-            display: block;
-            margin-top: 1.5rem;
-            display: flex;
-            align-items: center;
-            text-transform: capitalize;
-
-            :first-child {
-                margin-right: 0.75rem;
-            }
-
-            :last-child {
-                margin-left: 1.5rem;
-                margin-right: 0.75rem;
-            }
+            color: inherit;
         }
     }
 }
+
+
 
 .readMoreButton {
     border: none;

@@ -1,1 +1,84 @@
-// TODO
+.banner {
+    width: 100%;
+    height: 25rem;
+    background-color: #111418;
+    margin-bottom: 5rem;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        line-height: 3.625rem;
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        max-width: 95%;
+    }
+
+    .legends {
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: baseline;
+        text-transform: capitalize;
+
+        span {
+            margin-right: 1.5rem;
+
+            svg {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.content {
+    line-height: 1.5rem;
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .paragraph {
+        p {
+            text-align: justify;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 1.75rem;
+
+            & + p {
+                margin-top: 1.5rem;
+            }
+
+            & + ul {
+                margin: 1rem 0;
+                padding-left: 2rem;
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+
+            strong {
+                color: var(--pink-500);
+            }
+
+            em {
+                display: block;
+                padding: 1.5rem;
+                margin: 0 0.5rem;
+
+                border-radius: 0.5rem;
+                font-style: inherit;
+                font-size: 1rem;
+                color: var(--gray-200);
+                background-color: var(--gray-900);
+            }
+        }
+
+        & + .paragraph{
+            margin-top: 3rem;
+        }
+    }
+}

@@ -5,6 +5,7 @@
 }
 
 :root {
+  --gray-900: #111418;
   --gray-800: #1A1D23;
   --gray-200: #BBBBBB;
   --gray-100: #D7D7D7;
@@ -35,10 +36,15 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-p, input, textarea, span{
+h1 {
+  font-size: 3rem;
+}
+
+p, input, textarea, span, li{
   font-family: Inter, sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: var(--white)
 }
